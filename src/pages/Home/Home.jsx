@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css"
 import Hero from "../../Components/Hero/Hero";
 import Services from "../../Components/Services/Services";
+import Benefits from "../../Components/Benefits/Benefits";
 
 
 const slides = [
@@ -29,6 +30,7 @@ function Home() {
       <div className="home">
         <Hero slides={slides} slideIntervel={5000} />
         <Services/>
+        <Benefits/>
       </div>
     );
 }
