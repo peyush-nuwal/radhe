@@ -25,11 +25,9 @@ const slides = [
 ];
 function Home() {
     return (
-        
-        <div className="home">
-            <Hero slides={slides}  />
-        </div>
-      
-    )
+      <div className="home">
+        <Hero slides={slides} slideIntervel={2000} />
+      </div>
+    );
 }
 export default Home

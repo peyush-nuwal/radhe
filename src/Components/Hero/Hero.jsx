@@ -3,38 +3,34 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import "./Hero.css";
-const Hero = ({slides}) => {
-  const [currentIndex, setCurrentIndex] = useState(0)
-   
+const Hero = ({ slides, slideIntervel }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, slideIntervel);
 
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
-useEffect(() => {
-  const interval = setInterval(() => {
-    handleNext();
-  }, 3000); 
+  const handleNext = () => {
+    setCurrentIndex((prevIdx) =>
+      prevIdx === slides.length - 1 ? 0 : prevIdx + 1
+    );
+  };
+  const handlePrev = () => {
+    setCurrentIndex((prevIdx) =>
+      prevIdx === 0 ? slides.length - 1 : prevIdx - 1
+    );
+  };
 
-  return () => clearInterval(interval); 
-}, [currentIndex]);
-
-
-  const  handleNext=()=>{
-     setCurrentIndex((prevIdx) =>
-       prevIdx === slides.length - 1 ? 0 : prevIdx+1
-     );
-  
-  }
-   const handlePrev = () => {
-     setCurrentIndex((prevIdx)=> prevIdx === 0 ? slides.length - 1 : prevIdx-1);
-         
-   };
-   
   return (
     <div className="hero-container">
       {slides.map((slide, idx) => (
         <div
           className={`hero`}
-          style={{transform:`translateX(-${currentIndex * 100}%)`}}
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           key={slide.id}
         >
           <div className="hero-left">
