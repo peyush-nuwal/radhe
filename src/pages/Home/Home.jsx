@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css"
-import Hero from "../Hero/Hero";
+import Hero from "../../Components/Hero/Hero";
+import Services from "../../Components/Services/Services";
 
 
 const slides = [
@@ -26,7 +27,8 @@ const slides = [
 function Home() {
     return (
       <div className="home">
-        <Hero slides={slides} slideIntervel={2000} />
+        <Hero slides={slides} slideIntervel={5000} />
+        <Services/>
       </div>
     );
 }
