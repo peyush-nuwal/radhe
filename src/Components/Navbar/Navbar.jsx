@@ -13,7 +13,6 @@ function Navbar() {
                     <li><NavLink to={"/"} className="item">Home</NavLink></li>
                     <li><NavLink to={"/explore"} className="item">Explore</NavLink></li>
                     <li><NavLink to={"/gallery"} className="item">Gallery</NavLink></li>
-                    <li><NavLink to={"/about"} className="item">About us</NavLink></li>
                     <li className="item">Contact</li>
                 </div>
             </nav>

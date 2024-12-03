@@ -2,7 +2,8 @@ import React from "react";
 import "./Home.css"
 import Hero from "../../Components/Hero/Hero";
 import Services from "../../Components/Services/Services";
-import Benefits from "../../Components/Benefits/Benefits";
+import Benefits from "../../Components/Benefits/Benefits.jsx";
+import Featured from "../../Components/Featured/Featured.jsx";
 
 
 const slides = [
@@ -31,6 +32,7 @@ function Home() {
         <Hero slides={slides} slideIntervel={5000} />
         <Services/>
         <Benefits/>
+        <Featured/>
       </div>
     );
 }
