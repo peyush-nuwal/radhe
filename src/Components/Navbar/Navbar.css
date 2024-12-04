@@ -40,7 +40,7 @@
     color: #767676;
     font-weight: bolder;
     position: relative;
-    font-size: 1.1vw;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 .item.active{
