@@ -6,3 +6,15 @@
     row-gap: 30px;
       place-items: center;
 }
+
+
+@media (max-width:480px){
+   .explore{
+    
+     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    row-gap: 20px;
+      place-items: center;
+}
+
+}

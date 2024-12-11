@@ -2,7 +2,7 @@
     overflow: hidden;
     display: flex;
     position: relative;
-    width: 100%;
+   max-width: 100vw;
      height: calc(100vh - 60px);
      background-color: #eceaeb;
 }
@@ -15,7 +15,7 @@
   background: #eceaeb;
  
   position: relative;
- 
+ flex-direction: row;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,4 +152,81 @@
 }
 .slide-prev:hover svg{
     transform: scale(1.2);
+}
+
+
+
+@media (max-width: 480px) { 
+
+.hero {
+  min-width: 100%;
+  height: 100%; 
+  display: flex;
+  flex-direction:column-reverse;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.hero-left {
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  padding-left: 5%;
+}
+.hero-left h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+ 
+}
+.hero-left p {
+  font-size: 0.7rem;
+ font-weight: 600;
+  color: #767676;
+  margin: 1rem 0;
+  width: 90%;
+}
+.hero-left-btn {
+ 
+  font-size: 1rem;
+
+}
+
+.hero-right {
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.hero-img {
+  width: 60%;
+  height: 80%;
+  margin-left: 0;
+}
+.slide-next{
+    padding: 8px;
+  
+}
+.slide-next svg{
+     width: 20px;
+     height: 20px;
+     
+}
+.slide-prev{
+    padding: 8px;
+  
+}
+.slide-prev svg{
+     width: 20px;
+     height: 20px;
+     
+}
 }

@@ -9,3 +9,15 @@
     width: 100%;
     margin-bottom: 1em;
 }
+
+
+
+@media (max-width:480px) {
+    .gallery{
+    
+    columns:150px;
+    padding: 0 0.5rem;
+    padding-top: 5em;
+}
+    
+}
