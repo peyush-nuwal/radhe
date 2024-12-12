@@ -33,3 +33,18 @@
 }
 
 }
+
+
+@media (max-width:1024px){
+        .featured-h1{
+       font-size: 2.5rem;
+   
+   
+   
+}
+.featured-product-container{
+   
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+}
+}

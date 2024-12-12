@@ -54,12 +54,36 @@
 
 @media (max-width: 480px) {
   .product-card {
-    width: 150px;
-    height: 200px;
+     max-width: 150px;
+     max-height: 200px;
   }
 
   .product-card-title {
     font-size: 0.8rem;
+  }
+  
+.detailed-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  height: 80vh;
+  z-index: 99999999;
+  background: #2b2a2a7c;
+  padding: 0.5rem;
+}
+}
+
+@media (max-width:1024px) {
+  
+    .product-card {
+    max-width: 200px;
+    max-height: 250px;
+  }
+
+  .product-card-title {
+    font-size: 1rem;
   }
   
 .detailed-card {
