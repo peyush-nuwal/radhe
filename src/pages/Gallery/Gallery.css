@@ -12,20 +12,12 @@
 
 
 
-@media (max-width:480px) {
-    .gallery{
-    
-    columns:150px;
-    padding: 0 0.5rem;
-    padding-top: 5em;
-}
-    
-}
+
 
 @media (max-width:1024px) {
     .gallery{
     
-    columns:100px;
+    columns:200px;
     padding: 0 0.5rem;
     padding-top: 5em;
 }
