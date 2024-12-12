@@ -17,7 +17,7 @@
 @media (max-width:1024px) {
     .gallery{
     
-    columns:200px;
+    columns:150px;
     padding: 0 0.5rem;
     padding-top: 5em;
 }
