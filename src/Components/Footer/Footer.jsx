@@ -57,7 +57,7 @@ function Footer({ scrollToTop }) {
         <a href="https://www.linkedin.com/in/bharat-suthar-842902241/">
           Bharat
         </a>{" "}
-        & <a href="www.linkedin.com/in/peyush-nuwal">Peyush</a>
+        & <a href="https://www.linkedin.com/in/peyush-nuwal">Peyush</a>
       </h5>
     </div>
   );

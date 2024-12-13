@@ -36,6 +36,10 @@ function Gallery()
 ];
 
 
+
+
+
+
     return (
       <div className="gallery">
         {femaleSuperstars.map((item)=>(

@@ -105,7 +105,14 @@
 }
 
 
-
+.contact-btn{
+  text-decoration: none;
+  color: #767676;
+  font-weight: bolder;
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
 
 
 @media   (max-width: 768px) {

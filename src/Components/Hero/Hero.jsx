@@ -36,9 +36,7 @@ const Hero = ({ slides, slideIntervel }) => {
           <div className="hero-left">
             <h1>{slide.title}</h1>
             <p>{slide.desc}</p>
-            <button className="hero-left-btn">
-              Shop Now <FaArrowRightLong className="btn-arrow" />
-            </button>
+            
           </div>
           <div className="hero-right">
             <img src={slide.src} alt="" className="hero-img" />
